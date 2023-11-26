@@ -1,0 +1,40 @@
+# Primeira aula
+print("Oi mundo!")
+
+# Atribuição
+num1 = 30
+num2 = 50
+num3 = 70
+num4 = 80
+num5 = 700
+
+print(num1, num2, num3, num4, num5)
+
+# Salvando um valor
+saved_value = num5
+
+# Atribuição com troca de valores
+num5 = num4
+num4 = num3
+num3 = num2
+num2 = num1
+num1 = saved_value
+
+print(num1, num2, num3, num4, num5)
+
+# Atribuição usando uma única linha
+num1, num2, num3, num4, num5 = num5, num1, num2, num3, num4
+
+print(num1, num2, num3, num4, num5)
+
+# Operadores relacionais e lógicos
+comp1 = num1 > num4 and not num2 < num3
+comp2 = num5 > num3 or num3 > num4
+comp3 = num5 > num3 or not num3 > num4
+comp4 = num1 < num4 and num2 > num5
+comp5 = not num1 > num5
+
+print(comp1, comp4, comp2, comp3, comp5)
+
+# Deletando as variáveis
+del num1, num2, num3, num4, num5, saved_value, comp1, comp2, comp3, comp4, comp5
